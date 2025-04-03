@@ -345,19 +345,292 @@
 // }
 
 
-let line1 = "abc"
-let line2 = "abcde"
-let biggerline = ""
-let diff = 0
-if (line1.length > line2.length){
-    biggerline = line1
-    diff = line1.length - line2.length
-}
+// let line1 = "abc"
+// let line2 = "abcde"
+// let biggerline = ""
+// let diff = 0
+// if (line1.length > line2.length){
+//     biggerline = line1
+//     diff = line1.length - line2.length
+// }
 
-else{
-    biggerline = line2
-    diff = line2.length - line1 .length
+// else{
+//     biggerline = line2
+//     diff = line2.length - line1 .length
+// }
+// for (let i = 0; i < diff; i++){
+//     console.log(biggerline)
+// }
+
+
+
+// let line = "bufon"
+// if (line.length > 10){
+//     line = line.slice(0, 6)
+// }
+// else{
+//     while (line.length < 12){
+//         line += "o"
+//     }
+// }
+// console.log(line)
+
+
+// 
+
+
+// let line = "fhfh"
+// if (line.length > 5){
+//     console.log(line.slice(0, 3))
+//     console.log(line.slice(line.length-3, line.length))
+// }
+// else{
+//     for (let i = 0; i < line.length; i++){
+//         console.log(line[0]) 
+//     }
+// }
+
+
+// let line = "hfsefheu124242525365756857867978974djkfhkjs"
+// let numbers = "1234567890"
+// let count = 0
+// for (let i = 0; i < line.length; i++){
+//     if (numbers.includes(line[i])){
+//         count += 1
+//     }
+// }
+// console.log(count)
+
+// let dd = true
+// let line = "abc"
+// let word = "abc"
+// for (let i = 0; i < line.length; i++){
+//     if (!word.includes(line[i])){
+//         dd = false
+//     }
+// }
+// console.log(dd)
+
+
+// let line = "dgfdgdf123gfdgdfg1234"
+// let numbers ="1234567890"
+// let maxlength = 0
+// let currentlenght = 0
+// for (let i = 0; i < line.length; i++){
+//     if (numbers.includes(line[i])){
+//         currentlenght += 1
+//     }
+//     else{
+//         if (currentlenght > maxlength){
+//             maxlength = currentlenght
+//         }
+//         currentlenght = 0
+//     }
+// }
+// if (currentlenght > maxlength){
+//     maxlength = currentlenght
+// }
+// console.log(maxlength)
+
+
+// let line = "wadfdkfj1j534ij667hu55556"
+// let numbers = "1234567890"
+// let summa = 0 
+// for (let i = 0; i < line.length; i++){
+//     if (numbers.includes(line[i])){
+//         summa += Number(line[i])
+//     }
+// }
+// console.log(summa)
+
+
+// function print(line){
+//     let numbers = "1234567890"
+//     let summa = 0
+
+//     for (let i = 0; i < line.length; i++){
+//         if (numbers.includes(line[i])){
+//             summa += Number(line[i])
+//         }
+//     }
+//     console.log(summa)
+// }
+
+// print("1edgfsejg34gyu6ghgvhjbvhjghgvfhjs56")
+
+
+
+// function toBinary(num){
+//     if (num === 0){
+//         return "0"
+//     }
+//     let resul = ""
+//     while (num > 0){
+//         resul = String(num % 2) + resul
+//         num = Math.floor(num / 2)
+//     }
+//     return resul
+// }
+// for (let i = 0; i <= 10; i++){
+//     console.log(toBinary(i))
+// }
+
+
+// function pow(num, s){
+//     let resul = 1
+//     for (let i = 0; i < s; i++){
+//         resul *= num
+
+//     } 
+//     return resul
+// }
+
+// console.log(pow(3, 2))
+
+// function sumArray(arr) {
+//     let sum = 0
+//     for (let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     return sum 
+// }
+
+// let value = sumArray([5, 7, 2, 3, 8, 9])
+// console.log(value)
+
+
+// function multArray (arr){
+//     let mult = 1
+//     for (let i = 0; i < arr.length; i++){
+//         console.log(mult + "/" + arr[i])
+//         mult /= arr[i]
+        
+//     }
+//     return mult
+// }
+// let value = multArray([3, 7, 93, 7, 5])
+// console.log(value)
+
+// function isUpper (line){
+//     if (line[0] == line[0].toUpperCase()){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+// let value = isUpper("hello world")
+// console.log(value)
+
+// function makePositive (arr){
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] < 0){
+//             arr[i] = -arr[i]
+//         }
+//     }
+//     return arr
+// }
+// let value = makePositive([2, 6, -6, -1, 7, 3])
+// console.log(value)
+
+
+// function dayfWeek(number){
+//     const weekDays = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+//     if (number > 0 && number < 8){
+//         return weekDays[number - 1]
+//     }
+//     else{
+//         return "Неверный день!"
+//     }
+// }
+// console.log(dayfWeek(3))
+
+// const printArray = (arr) => {
+//     for (let i = 0; i < arr.lenght; i++){
+//         console.log(arr[i])
+//     }
+// }
+// printArray(["Hello", "World"])
+
+// const array = ["Hello", "world"]
+// array.forEach((el) => {
+//     console.log(el)
+// })
+
+// const fruits = ["Kiwi", "apple", "kiwi", "orange", "Kiwi", "apple"]
+// const count = {}
+// fruits.forEach(el => {
+//     if (!count[el]){
+//         count[el] = 1
+//     }
+//     else{
+//         count[el] += 1
+//     }
+// })
+// console.log(count)
+
+// const fruits = ["Kiwi", "apple", "Kiwi", "orange", "Kiwi", "apple"]
+// const getUnique = (array) => {
+//     const unique = []
+//     array.forEach(fruit => {
+//             if (!unique.includes(fruit)) {
+//             unique.push(fruit)
+//         }
+//     })
+//     return unique
+// }
+// console.log(getUnique(fruits))
+
+
+// const array = [
+//     { name: 'alex', age: 20}, 
+//     { name: 'mike', age: 24},
+//     { name: 'masha', age: 20}
+// ]
+
+// const index = array.findIndex(el => el.name === "masha")
+// console.log(index)
+
+// const getsum = arr => {
+//     let sum = 0
+//     arr.forEach(el => {
+//         sum += el
+//     })
+//     return sum
+// }
+// console.log(getsum([1, 3, 6, 1, 9]))
+
+
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min) + min)
+
+
+const getRandomString = (length) => {
+    const aviableSymbols = "abcdefABCDEF"
+    let resul = ""
+    for (let i = 0; i < length; i++){
+        let index = getRandomInt(0, aviableSymbols.length)
+        resul += aviableSymbols[index]
+    }
+    return resul
 }
-for (let i = 0; i < diff; i++){
-    console.log(biggerline)
+// const generaEmail = (length = 10, domain = "gmail.com") => getRandomString(length) + "@" + domain
+// console.log(generaEmail())
+
+// const string = line => {
+//     let space = " "
+//     let ss = ""
+//     for (let i = 0; i < line.length; i++){
+//         ss += line[i] + space
+//     }
+//     return ss
+// }
+// console.log(string("привет"))
+
+const string = line => {
+    let ss = ""
+    for (let i = 0; i < line.length; i++){
+        ss += line[i] + getRandomString(2)
+    }
+    return ss
 }
+console.log(string("Hello"))
